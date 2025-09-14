@@ -367,10 +367,15 @@ main {
   border-radius: 5px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .project-card-hover {
     margin: 20px;
     /* padding : 20px; */
+  }
+
+  .project-card-hover img {
+    /* width: fit-content; */
+    padding: 5px;
   }
 }
 
@@ -596,7 +601,7 @@ main {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   /* .timeline-item::after:nth-child(2){
     transform: translateX(18px);
     z-index : 1;
@@ -785,4 +790,60 @@ main {
 
 button:hover {
   transform: scale(1);
+}
+
+.project-card-hover a:active {
+  transform: scale(1.1);
+}
+
+.my-contact-list {
+  align-items: center;
+}
+@media (min-width: 300px) {
+  .my-contact-item {
+    width: 90%;
+    transform: translateX(-30px);
+    /* margin : 10px; */
+  }
+  .my-contact-icon {
+    display: flex;
+    transform: translateX(180%);
+  }
+}
+
+@media (min-width: 355px) and (max-width: 376px) {
+  .my-contact-item {
+    width: 90%;
+    transform: translateX(-5px);
+    /* margin : 10px; */
+  }
+}
+
+@media (min-width: 377px) and (max-width: 430px) {
+  .my-contact-item {
+    width: 90%;
+    transform: translateX(10px);
+    /* margin : 10px; */
+  }
+}
+
+@media (min-width: 450px) and (max-width: 760px) {
+  .my-contact-item {
+    width: 90%;
+    transform: translateX(15px);
+    /* margin : 10px; */
+  }
+}
+
+@media (min-width: 765px) and (max-width: 2565px) {
+  .my-contact-item {
+    width: 90%;
+    transform: translateX(25px);
+    /* margin : 10px; */
+  }
+
+  .my-contact-icon {
+    display: flex;
+    transform: translateX(240%);
+  }
 }
