@@ -279,10 +279,10 @@ main {
   box-shadow: 0 12px 40px rgba(147, 151, 193, 0.5);
 }
 
-@media (max-width : 750px){
-  .skill-card img{
-  width : 150px;
-  height : 150px;
+@media (max-width: 750px) {
+  .skill-card img {
+    width: 150px;
+    height: 150px;
   }
 }
 
@@ -322,8 +322,6 @@ main {
   box-shadow: 0 15px 40px black;
 }
 
-
-
 .project-card-hover img {
   width: 100%;
   height: 100%;
@@ -350,7 +348,6 @@ main {
   align-items: center;
 }
 
-
 .project-card-hover:hover .project-info-overlay {
   transform: translateY(0);
 }
@@ -363,22 +360,23 @@ main {
 }
 
 .project-card-hover a {
- background-color: #3c1053;
- padding : 5px;
- margin : 5px;
- border : 2px solid transparent;
- border-radius: 5px;
+  background-color: #3c1053;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid transparent;
+  border-radius: 5px;
 }
 
-@media (max-width : 500px){
-  .project-card-hover{
-    margin : 20px;
+@media (max-width: 500px) {
+  .project-card-hover {
+    margin: 20px;
     /* padding : 20px; */
   }
-
-  .project-card-hover img{
-  
 }
+
+#coding-profiles .projects-container .project-card-hover img {
+  padding: 20px;
+  object-fit: contain;
 }
 /* Contact Section */
 #contact {
@@ -598,6 +596,21 @@ main {
   }
 }
 
+@media (max-width: 500px) {
+  /* .timeline-item::after:nth-child(2){
+    transform: translateX(18px);
+    z-index : 1;
+  } */
+
+  .timeline-item:nth-child(2) {
+    margin-left: 20px;
+    padding-left: 40px;
+    padding-right: 30px;
+  }
+  /* .timeline-content:nth-child(.timeline-item:nth-child(even)){
+    transform: translateX(-10px);
+  } */
+}
 /* --- Custom Experience Card Styles (new) --- */
 #experience {
   padding: 80px 20px;
@@ -768,4 +781,8 @@ main {
 .my-contact-item:hover .my-contact-icon {
   fill: #ff6ec4;
   transform: scale(1.1);
+}
+
+button:hover {
+  transform: scale(1);
 }
