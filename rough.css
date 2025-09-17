@@ -841,10 +841,6 @@ button:hover {
     transform: translateX(25px);
     /* margin : 10px; */
   }
-
-  .my-contact-icon {
-    display: flex;
-    transform: translateX(240%);
-  }
 }
+
 
